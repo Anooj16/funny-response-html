@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny</title>
+    <style>
+p {
+text-align: center;
+font-size: 32px;
+font-family: Candara, Oswald;
+}
+img {
+display: block;
+margin: 0 auto;
+width: 25%;
+}
+.tenor-gif-embed {
+    display: block;
+margin: 0 auto;
+width: 25%;
+height: 300px;
+}
+#botao1 {
+margin-top: 12px;
+position: fixed;
+top: 70%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+#botao2 {
+margin-top: 12px;
+position: absolute;
+ left: 39%;
+  top: 68%;
+}
+</style>
+</head>
+<body>
+    <p>Are you a MERN Stack Developer?</p>
+<!-- <img src="https://tenor.com/view/crying-crying-meme-gif-26327776"> -->
+<br>
+<br>
+<div class="tenor-gif-embed" data-postid="26327776" data-share-method="host" data-aspect-ratio="0.996875" data-width="50%"><a href="https://tenor.com/view/crying-crying-meme-gif-26327776">Crying Crying Meme GIF</a>from <a href="https://tenor.com/search/crying-gifs">Crying GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+<button id="botao2">YES Bruhhh</button>
+<button id="botao1">NO Bruhh</button>
+<script>
+const button2 = document.getElementById('botao2');
+let left = 40;
+button2.addEventListener('mouseover', function() {
+  if(left == 40){
+    left = 70;
+  }else if(left==70){
+    left = 35;
+  }else{
+    left= 40;
+  }
+  this.style.left = left + '%';
+});
+
+document.getElementById('botao1').addEventListener('click', function() {
+alert('Go and Study');
+});
+
+document.getElementById('botao2').addEventListener('click', function() {
+alert('Its illuminandi brooo...');
+});
+</script>
+    
+</body>
+</html>
